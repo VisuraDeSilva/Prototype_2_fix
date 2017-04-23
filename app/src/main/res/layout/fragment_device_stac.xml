@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.visura.prototype_2.DeviceStacFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="Ph Level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl4"
+        android:layout_alignLeft="@+id/lbl4"
+        android:layout_alignStart="@+id/lbl4"
+        android:layout_marginTop="28dp"
+        android:id="@+id/lbl5" />
+
+    <TextView
+        android:text="NPK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl5"
+        android:layout_alignLeft="@+id/lbl5"
+        android:layout_alignStart="@+id/lbl5"
+        android:layout_marginTop="30dp"
+        android:id="@+id/lbl6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblPh"
+        android:layout_alignBaseline="@+id/lbl5"
+        android:layout_alignBottom="@+id/lbl5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/lblMoisture"
+        android:layout_alignStart="@+id/lblMoisture" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblNPK"
+        android:layout_alignBaseline="@+id/lbl6"
+        android:layout_alignBottom="@+id/lbl6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/lblPh"
+        android:layout_alignStart="@+id/lblPh" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lbl2"
+        android:id="@+id/lblTemp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/lbl1"
+        android:layout_toEndOf="@+id/lbl1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblHumidity"
+        android:layout_alignBaseline="@+id/lbl3"
+        android:layout_alignBottom="@+id/lbl3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/lblTemp"
+        android:layout_alignStart="@+id/lblTemp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblMoisture"
+        android:layout_alignBaseline="@+id/lbl4"
+        android:layout_alignBottom="@+id/lbl4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/lblHumidity"
+        android:layout_alignStart="@+id/lblHumidity" />
+
+    <TextView
+        android:text="Mositure Level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl4"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_below="@+id/lbl3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/lbl3"
+        android:layout_below="@+id/lbl2"
+        android:layout_alignLeft="@+id/lbl4"
+        android:layout_alignStart="@+id/lbl4" />
+
+    <TextView
+        android:text="Temprature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/lbl2"
+        android:layout_below="@+id/lbl1"
+        android:layout_alignLeft="@+id/lbl3"
+        android:layout_alignStart="@+id/lbl3" />
+
+    <TextView
+        android:text="Statistic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/lbl1"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:typeface="serif"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="8sp"
+        android:textAllCaps="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnConnect"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnConnect"
+        android:layout_toRightOf="@+id/lbl4"
+        android:layout_marginTop="14dp"
+        android:id="@+id/lblError" />
+
+</RelativeLayout>

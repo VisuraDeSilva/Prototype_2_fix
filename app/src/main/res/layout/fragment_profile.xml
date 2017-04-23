@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.visura.prototype_2.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="131dp"
+        app:srcCompat="?android:attr/fingerprintAuthDrawable"
+        android:id="@+id/imgProfilePic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:id="@+id/lblProName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/imgProfilePic"
+        android:layout_toEndOf="@+id/imgProfilePic"
+        android:hint="Admin"
+        android:textSize="30sp"
+        android:textStyle="normal|bold|italic"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Age      :-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgProfilePic"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp"
+        android:id="@+id/textView6"
+        android:layout_alignRight="@+id/imgProfilePic"
+        android:layout_alignEnd="@+id/imgProfilePic"
+        android:textAllCaps="false"
+        android:textSize="30sp" />
+
+    <TextView
+        android:text="Adress :-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:textSize="30sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView6"
+        android:id="@+id/lblProAddress"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView8"
+        android:padding="50dp"
+        android:paddingBottom="50dp"
+        android:paddingEnd="50dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingStart="50dp"
+        android:paddingTop="50dp"
+        android:hint="Address"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblProAge"
+        android:hint="35"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/btnUserStatus"
+        android:layout_toLeftOf="@+id/lblProAddress"
+        android:layout_toStartOf="@+id/lblProAddress" />
+
+    <Button
+        android:text="Calender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCalender"
+        android:layout_above="@+id/btnUserStatus"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btnUserStatus"
+        android:layout_alignEnd="@+id/btnUserStatus" />
+</RelativeLayout>

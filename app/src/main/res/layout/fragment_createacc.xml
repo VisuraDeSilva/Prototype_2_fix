@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.visura.prototype_2.CreateaccFragment">
+
+    <TextView
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="43dp"
+        android:id="@+id/lblName"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignBottom="@+id/lblName"
+        android:layout_toRightOf="@+id/lblName"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:id="@+id/txtName"
+        android:hint="Type Your Name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/lblEmail"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:layout_below="@+id/lblName"
+        android:layout_alignLeft="@+id/lblName"
+        android:layout_alignStart="@+id/lblName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_alignBottom="@+id/lblEmail"
+        android:id="@+id/txtEmail"
+        android:hint="Ex-123456789@gmail.com"
+        android:layout_alignRight="@+id/txtPassword"
+        android:layout_alignEnd="@+id/txtPassword"
+        android:layout_toEndOf="@+id/lblName"
+        android:layout_alignLeft="@+id/txtName"
+        android:layout_alignStart="@+id/txtName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_alignTop="@+id/lblPasswordLog"
+        android:layout_toRightOf="@+id/lblPasswordLog"
+        android:id="@+id/txtPassword"
+        android:hint="5-digit password"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:id="@+id/lblPasswordLog"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:layout_below="@+id/lblEmail"
+        android:layout_alignLeft="@+id/lblEmail"
+        android:layout_alignStart="@+id/lblEmail" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignBottom="@+id/lblPostCode"
+        android:layout_toRightOf="@+id/lblPostCode"
+        android:layout_toEndOf="@+id/lblPostCode"
+        android:id="@+id/txtPostCode"
+        android:hint="Postal_Code" />
+
+    <TextView
+        android:text="Postal Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/lblPostCode"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:layout_below="@+id/lblPasswordLog"
+        android:layout_alignLeft="@+id/lblPasswordLog"
+        android:layout_alignStart="@+id/lblPasswordLog" />
+
+    <TextView
+        android:text="Create Account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtName"
+        android:layout_alignLeft="@+id/lblName"
+        android:layout_alignStart="@+id/lblName"
+        android:layout_marginBottom="14dp"
+        android:id="@+id/txtTitle1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <CheckBox
+        android:text="I agree to Tems and Services Terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:id="@+id/chcTerms"
+        android:layout_below="@+id/txtPostCode"
+        android:layout_toRightOf="@+id/lblPasswordLog"
+        android:layout_toEndOf="@+id/lblPasswordLog" />
+
+    <Button
+        android:text="Create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCreate"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/chcTerms"
+        android:layout_toLeftOf="@+id/txtPostCode"
+        android:layout_toStartOf="@+id/txtPostCode" />
+
+    <Button
+        android:text="Clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnClear"
+        android:layout_marginRight="61dp"
+        android:layout_marginEnd="61dp"
+        android:layout_alignBaseline="@+id/btnCreate"
+        android:layout_alignBottom="@+id/btnCreate"
+        android:layout_alignRight="@+id/txtPostCode"
+        android:layout_alignEnd="@+id/txtPostCode" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/txtName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
